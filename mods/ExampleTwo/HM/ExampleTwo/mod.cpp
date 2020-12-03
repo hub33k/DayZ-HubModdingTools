@@ -1,0 +1,11 @@
+name = "Example Mod";
+// picture = "HM/ExampleTwo/GUI/textures/em_icon.edds";
+// logo = "HM/ExampleTwo/GUI/textures/em_icon.edds";
+// logoSmall = "HM/ExampleTwo/GUI/textures/em_icon.edds";
+// logoOver = "HM/ExampleTwo/GUI/textures/em_icon.edds";
+tooltip = "Example Mod";
+overview = "This is a Example Mod for DayZ SA.";
+action = "https://hub33k.pl";
+author = "hub33k";
+authorID = "76561197968510850";
+version = "0.0.0";
