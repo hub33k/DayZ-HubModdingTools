@@ -15,40 +15,6 @@ set "PathMikeroTools=C:\Program Files (x86)\Mikero\DePboTools\bin\"
 
 @REM ================================================================
 
-@REM Mods for development
-
-set "ModPrefix=HM\ExampleOne"
-
-set "PathModsDevRoot=%PathWorkDrive%\HM\"
-
-set "MODS_DEV=%PathWorkDrive%\%ModPrefix%"
-@REM set "MODS_DEV=%MODS_DEV%;%PathModsDevRoot%HubAdminTools"
-
-@REM ================================
-
-@REM External mods (like @CF, @VPPAdminTools)
-
-set "PathModsExternalRoot=%PathWorkDrive%\Mods\"
-
-set "MODS_EXTERNAL=%PathModsExternalRoot%@CF"
-set "MODS_EXTERNAL=%MODS_EXTERNAL%;%PathModsExternalRoot%@VPPAdminTools"
-
-@REM ================================
-
-@REM Mods for Workbench
-
-set "GprojToLoad=%PathWorkDrive%\%ModPrefix%\Workbench\dayz.gproj"
-
-set "PathModsWorkbenchRoot=%PathWorkDrive%\HM\"
-
-set "MODS_WORKBENCH=%PathWorkDrive%\%ModPrefix%"
-
-@REM ================================
-
-set "MODS=%MODS_EXTERNAL%;%MODS_DEV%"
-
-@REM ================================================================
-
 set "PathSPMission=%PathClient%\mpmissions\dayzOffline.chernarusplus"
 set "PathMPMission=%PathServer%\mpmissions\dayzOffline.chernarusplus"
 
@@ -56,6 +22,10 @@ set "PlayerName=hub33k"
 set "ServerProfileFolder=!Server_Profile"
 set "ClientProfileFolder=!Client_Profile"
 set "ServerPort=2302"
+
+@REM ================================================================
+
+call Local/HubMods.bat
 
 @REM ================================================================
 
