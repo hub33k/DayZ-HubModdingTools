@@ -9,7 +9,7 @@ modded class MissionGameplay {
 
 	void ~MissionGameplay() {}
 
- 	override void OnKeyPress(int key) {
+	override void OnKeyPress(int key) {
 		super.OnKeyPress(key);
 
 		m_TestGame.OnKeyPress(key);
