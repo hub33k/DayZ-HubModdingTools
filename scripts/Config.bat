@@ -2,6 +2,12 @@
 
 cd /d "%~dp0"
 
+for %%d in (%~dp0..) do (
+  set PathHMTBase=%%~fd
+)
+
+@REM ================================================================
+
 @REM Load user config
 if exist ConfigUser.bat (
   call ConfigUser.bat
@@ -14,12 +20,6 @@ set "PathDayZClient=%PathSteamAppsCommon%\DayZ"
 set "PathDayZServer=%PathSteamAppsCommon%\DayZServer"
 set "PathDayZTools=%PathSteamAppsCommon%\DayZ Tools"
 set "PathDayZWorkbench=%PathDayZTools%\Bin\Workbench"
-
-@REM ================================
-
-for %%d in (%~dp0..) do (
-  set PathHMTBase=%%~fd
-)
 
 @REM ================================================================
 @REM DayZ Executable files for development
