@@ -10,9 +10,6 @@ call Config.bat
 
 @REM ================================================================
 
-set "ServerProfileDir=%PathServer%\%ServerProfileFolder%"
-set "ClientProfileDir=%PathClient%\%ClientProfileFolder%"
-
 del /s /q /f %ServerProfileDir%\*.rpt 2>nul
 del /s /q /f %ServerProfileDir%\*.log 2>nul
 del /s /q /f %ServerProfileDir%\*.mdmp 2>nul
