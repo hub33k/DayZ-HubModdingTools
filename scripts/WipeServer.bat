@@ -17,4 +17,4 @@ if exist %pathToRemove% (
   rmdir /s /q "%pathToRemove%"
 )
 
-pause
+@REM pause

@@ -46,15 +46,22 @@ xcopy "%PathDayZServer%\battleye"           "%PathServer%\battleye" /D /Y /I /F 
 xcopy "%PathDayZServer%\bliss"              "%PathServer%\bliss" /D /Y /I /F /E
 xcopy "%PathDayZServer%\dta"                "%PathServer%\dta" /D /Y /I /F /E
 xcopy "%PathDayZServer%\keys"               "%PathServer%\keys" /D /Y /I /F
+
+@REM
 xcopy "%PathDayZServer%\mpmissions"         "%PathServer%\mpmissions" /D /Y /I /F /E
 
 xcopy "%PathDayZServer%\*.dll"              "%PathServer%\" /D /Y /F
+
+@REM
 xcopy "%PathDayZServer%\ban.txt"            "%PathServer%\" /D /Y /F
 xcopy "%PathDayZServer%\whitelist.txt"      "%PathServer%\" /D /Y /F
 xcopy "%PathDayZServer%\dayzsetting.xml"    "%PathServer%\" /D /Y /F
+
 xcopy "%PathDayZServer%\dayz.gproj"         "%PathServer%\" /D /Y /F
 
-xcopy "%PathHMTBase%\config\serverDZ.cfg"   "%PathServer%\" /D /Y /F
+@REM
+rem xcopy "%PathHMTBase%\config\serverDZ.cfg"   "%PathServer%\" /D /Y /F
+xcopy "%PathDayZServer%\serverDZ.cfg"   "%PathServer%\" /D /Y /F
 
 echo.
 

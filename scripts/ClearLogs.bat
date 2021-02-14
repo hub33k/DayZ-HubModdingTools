@@ -25,4 +25,4 @@ del /s /q /f %ClientProfileDir%\*.ADM 2>nul
 @REM del /s /q /f "%localappdata%\DayZ Exp\*.mdmp"
 @REM del /s /q /f "%localappdata%\DayZ Exp\*.ADM"
 
-pause
+@REM pause
