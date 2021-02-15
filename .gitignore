@@ -15,8 +15,11 @@ scripts-ps/Local.ps1
 mods/*
 !mods/ExampleOne/
 !mods/ExampleTwo/
+
 scripts/Local/
 scripts-ps/Local/
+
+servers/*
 
 # Generated
 # ================================================================
