@@ -6,6 +6,9 @@
 scripts/ConfigUser.bat
 scripts/Local.bat
 
+scripts-ps/ConfigUser.ps1
+scripts-ps/Local.ps1
+
 # Folders
 # ================================================================
 
@@ -13,6 +16,7 @@ mods/*
 !mods/ExampleOne/
 !mods/ExampleTwo/
 scripts/Local/
+scripts-ps/Local/
 
 # Generated
 # ================================================================
