@@ -1,5 +1,7 @@
 . ./Config
 
+# xcopy options - https://www.petefreitag.com/item/99.cfm
+
 "----------------------------------------------------------------"
 "BEGIN copying Client and Server Game Directories to:"
 "$PathClient and $PathServer"
@@ -14,8 +16,8 @@
 "----------------------------------------------------------------"
 
 xcopy "$PathDayZClient\Addons"          "$PathClient\Addons" /D /Y /I /F
-xcopy "$PathDayZClient\BattlEye"        "$PathClient\BattlEye" /D /Y /I /F
-xcopy "$PathDayZClient\bliss"           "$PathClient\bliss" /D /Y /I /F
+xcopy "$PathDayZClient\BattlEye"        "$PathClient\BattlEye" /D /Y /I /F /E
+xcopy "$PathDayZClient\bliss"           "$PathClient\bliss" /D /Y /I /F /E
 xcopy "$PathDayZClient\dta"             "$PathClient\dta" /D /Y /I /F
 
 xcopy "$PathDayZClient\*.dll"           "$PathClient\" /D /Y /F
@@ -40,15 +42,14 @@ xcopy "$PathDayZServer\keys"               "$PathServer\keys" /D /Y /I /F
 
 xcopy "$PathDayZServer\*.dll"              "$PathServer\" /D /Y /F
 
-# xcopy "$PathDayZServer\mpmissions"         "$PathServer\mpmissions" /D /Y /I /F /E
+# ================================
 
+# xcopy "$PathDayZServer\mpmissions"         "$PathServer\mpmissions" /D /Y /I /F /E
 # xcopy "$PathDayZServer\ban.txt"            "$PathServer\" /D /Y /F
 # xcopy "$PathDayZServer\whitelist.txt"      "$PathServer\" /D /Y /F
 # xcopy "$PathDayZServer\dayzsetting.xml"    "$PathServer\" /D /Y /F
 # xcopy "$PathDayZServer\dayz.gproj"         "$PathServer\" /D /Y /F
-
-# rem xcopy "$PathHMTBase\config\serverDZ.cfg"   "$PathServer\" /D /Y /F
-# xcopy "$PathDayZServer\serverDZ.cfg"   "$PathServer\" /D /Y /F
+# xcopy "$PathDayZServer\serverDZ.cfg"       "$PathServer\" /D /Y /F
 
 "`n"
 
