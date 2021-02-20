@@ -39,6 +39,6 @@ if (Test-Path -Path "$PathServerMission" -PathType Container) {
   Remove-Item $PathServerMission -Recurse -Force -Confirm:$false
 }
 
-New-Item -Path "$PathServerMission" -ItemType SymbolicLink -Value "$PathMPMission"
+New-Item -Path "$PathServerMission" -ItemType Junction -Value "$PathMPMission"
 
 pause

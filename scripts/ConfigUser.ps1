@@ -19,7 +19,9 @@ $KeyDirectory = "C:\dev\gamedev\dayz-modding\keys"
 $HMTUserConfigFile = "C:\dev\gamedev\dayz-tws\dayz-tws-server\Scripts\TWS.ps1"
 
 # Load mod config
-. $PathScriptsRoot/Local/Mods/ExampleMod
+# . $PathScriptsRoot/Local/Mods/ExampleMod
 
 # Load server config
-. $PathScriptsRoot/Local/Server/TWS
+. $PathScriptsRoot/Local/Server/hubdayz-chernarus-1
+# . $PathScriptsRoot/Local/Server/TWS
+# . $PathScriptsRoot/Local/Server/ExampleServer
