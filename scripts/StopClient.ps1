@@ -2,4 +2,4 @@
 
 StopProcess "$PathClient\$ExecutableDayZClient"
 
-pause
+# pause

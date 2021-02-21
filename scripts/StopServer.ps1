@@ -2,4 +2,4 @@
 
 StopProcess "$PathServer\$ExecutableDayZServer"
 
-pause
+# pause

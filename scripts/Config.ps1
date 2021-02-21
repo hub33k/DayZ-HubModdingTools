@@ -17,7 +17,7 @@ $PathSteamAppsCommon = "$PathSteamApps\common"
 $PathDayZClient    = "$PathSteamAppsCommon\DayZ"
 $PathDayZServer    = "$PathSteamAppsCommon\DayZServer"
 $PathDayZTools     = "$PathSteamAppsCommon\DayZ Tools\Bin"
-$PathDayZWorkbench = "$PathDayZTools\Bin\Workbench"
+$PathDayZWorkbench = "$PathDayZTools\Workbench"
 
 # ================================================================
 

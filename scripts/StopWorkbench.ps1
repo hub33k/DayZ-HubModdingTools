@@ -2,4 +2,4 @@
 
 StopProcess "$PathDayZWorkbench\$ExecutableWorkbench"
 
-pause
+# pause

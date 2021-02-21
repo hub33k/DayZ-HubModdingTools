@@ -13,13 +13,14 @@ $PathMikeroTools   = "C:\Program Files (x86)\Mikero\DePboTools\bin"
 
 $PathServerMission = "$PathServer\mpmissions\dayzOffline.chernarusplus"
 
-$ModBuildDirectory = "C:\dev\gamedev\dayz-modding\mods"
-$KeyDirectory = "C:\dev\gamedev\dayz-modding\keys"
+$ModBuildDirectory = "P:\Mods"
+$KeyDirectory = "C:\dev\gamedev\dayz\modding\keys"
 
 $HMTUserConfigFile = "C:\dev\gamedev\dayz-tws\dayz-tws-server\Scripts\TWS.ps1"
 
+# NOTE (hub33k): load only one mod!
 # Load mod config
-# . $PathScriptsRoot/Local/Mods/ExampleMod
+. $PathScriptsRoot/Local/Mods/ExampleMod
 
 # Load server config
 . $PathScriptsRoot/Local/Server/hubdayz-chernarus-1
