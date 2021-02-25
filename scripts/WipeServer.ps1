@@ -7,4 +7,4 @@ if (Test-Path -Path $pathToRemove -PathType Container) {
   Remove-Item $pathToRemove -Recurse -Force -Confirm:$false
 }
 
-pause
+# pause

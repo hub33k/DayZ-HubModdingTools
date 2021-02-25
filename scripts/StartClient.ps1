@@ -8,4 +8,4 @@ Write-Host $ClientArgs
 
 start $PathClient\$ExecutableDayZClient $ClientArgs
 
-pause
+# pause

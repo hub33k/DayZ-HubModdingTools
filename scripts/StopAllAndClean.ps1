@@ -5,9 +5,11 @@
 # powershell stop on error, do not close cmd
 # $ErrorActionPreference = "Stop"
 
-. ./StopWorkbench
+# . ./StopWorkbench
 . ./StopClient
 . ./StopServer
+
+sleep 1
 
 . ./ClearLogs
 . ./WipeServer

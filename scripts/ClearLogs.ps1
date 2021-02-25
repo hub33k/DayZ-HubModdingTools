@@ -11,4 +11,4 @@ Remove-Item $ServerProfileDir\* -include *.log, *.rpt, *.mdmp, *.ADM
 # Delete Client logs
 Remove-Item $ClientProfileDir\* -include *.log, *.rpt, *.mdmp, *.ADM
 
-pause
+# pause
