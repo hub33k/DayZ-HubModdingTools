@@ -3,6 +3,7 @@
 . $PathScriptsRoot/Modding/Modding
 
  $ModPrefixDirectories = [System.Collections.ArrayList]@("ExampleMod")
+ $ModPrefixDirectories.Add("HM") > $null
 #  $ModPrefixDirectories.Add("DayZEditor") > $null
 #  $ModPrefixDirectories.Add("JM") > $null
 #  $ModPrefixDirectories.Add("DayZExpansion") > $null

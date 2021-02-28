@@ -20,7 +20,8 @@ $HMTUserConfigFile = "C:\dev\gamedev\dayz-tws\dayz-tws-server\Scripts\TWS.ps1"
 
 # NOTE (hub33k): load only one mod!
 # Load mod config
-. $PathScriptsRoot/Local/Mods/ExampleMod
+# . $PathScriptsRoot/Local/Mods/ExampleMod
+. $PathScriptsRoot/Local/Mods/HubMods
 
 # Load server config
 . $PathScriptsRoot/Local/Server/hubdayz-chernarus-1
