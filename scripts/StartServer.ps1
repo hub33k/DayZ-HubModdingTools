@@ -8,4 +8,4 @@
 
 start $PathServer\$ExecutableDayZServer $ServerArgs
 
-# pause
+pause
