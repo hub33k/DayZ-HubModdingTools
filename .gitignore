@@ -3,11 +3,8 @@
 # Files
 # ================================================================
 
-scripts/ConfigUser.bat
-scripts/Local.bat
-
-scripts-ps/ConfigUser.ps1
-scripts-ps/Local.ps1
+scripts/ConfigUser.ps1
+scripts/Local.ps1
 
 # Folders
 # ================================================================
@@ -17,7 +14,6 @@ mods/*
 !mods/ExampleTwo/
 
 scripts/Local/
-scripts-ps/Local/
 
 servers/*
 

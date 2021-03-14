@@ -1,5 +1,0 @@
-# Testing stuff
-
-. ./Config
-
-pause
