@@ -2,17 +2,6 @@
 
 . $PathScriptsRoot/Modding/Modding
 
-$ModPrefixDirectories = [System.Collections.ArrayList]@("ExampleMod")
-
-# $ModPrefixDirectories.Add("ExampleMod") > $null
-$ModPrefixDirectories.Add("HM") > $null
-# $ModPrefixDirectories.Add("TWS") > $null
-# $ModPrefixDirectories.Add("TheWalkingSurvivorsMod") > $null
-# $ModPrefixDirectories.Add("TWSMod") > $null
-
-# $ModPrefixDirectories.Add("JM") > $null
-# $ModPrefixDirectories.Add("DayZExpansion") > $null
-
 $ModPrefixDirectoriesSize = $ModPrefixDirectories.Count
 
 foreach ($prefix in $ModPrefixDirectories) {
