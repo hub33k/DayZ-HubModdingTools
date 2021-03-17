@@ -18,7 +18,7 @@ $MODS_TO_BUILD | ForEach-Object {
   "Copying over $PathWorkDrive\$prefixLinkRoot\mod.cpp to $modBuildDirectory\$modName\"
   Copy-Item "$PathWorkDrive\$prefixLinkRoot\mod.cpp" -Destination "$modBuildDirectory\$modName\"
 
-  $configFiles = Get-ChildItem -Path "$PathWorkDrive\$prefixLinkRoot" -Filter config.cpp -Recurse -ErrorAction SilentlyContinue -Force
+  $configFiles = Get-ChildItem -Path "$PathWorkDrive\$prefixLinkRoot" -Filter config.cpp -Recurse -Depth 1 -ErrorAction SilentlyContinue -Force
   foreach ($file in $configFiles) {
     $rootPath = $file.FullName.Replace('\' + $file.Name, "")
 
