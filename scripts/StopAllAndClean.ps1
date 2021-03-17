@@ -14,4 +14,4 @@ sleep 1
 . ./ClearLogs
 . ./WipeServer
 
-pause
+# pause
