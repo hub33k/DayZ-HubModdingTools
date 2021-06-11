@@ -1,1 +1,0 @@
-C:/dev/gamedev/dayz-tws/dayz-tws-dm-server/Scripts/TWS-DM.bat

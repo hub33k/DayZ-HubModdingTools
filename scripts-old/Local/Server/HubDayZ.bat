@@ -1,1 +1,0 @@
-C:/dev/gamedev/dayz-hub/HubDayZ/Scripts/HubModdingTools/HubDayZ.bat
