@@ -1,38 +1,31 @@
-$PathWorkDrive = "P:"
-$PathServer = "$PathWorkDrive\Server"
-$PathClient = "$PathWorkDrive\Client"
-
-$PathRealWorkDrive = "C:\dayz"
+$PathHMT = "C:\dev\gamedev\dayz\DayZ-HubModdingTools"
+$PathRealWorkDrive = "C:\dev\gamedev\dayz"
 $PathRealServer = "$PathRealWorkDrive\Server"
 $PathRealClient = "$PathRealWorkDrive\Client"
 
+$PathServer = "$PathRealServer"
+$PathClient = "$PathRealClient"
+
+$PathWorkDrive = "P:"
+
 $PathSteamApps     = "C:\Programs\Steam\steamapps"
-$PathMikeroTools   = "C:\Program Files (x86)\Mikero\DePboTools\bin\"
+$PathMikeroTools   = "C:\Program Files (x86)\Mikero\DePboTools\bin"
 
 $PathServerMission = "$PathServer\mpmissions\dayzOffline.chernarusplus"
 
-# Load custom config
-. ./Local/Server/Server1
+$ModBuildDirectory = "P:\ModsDev"
+$KeyDirectory = "C:\dev\gamedev\dayz\modding\keys"
 
-# Example config for mods
-$MODS_TO_BUILD = @(
-  [pscustomobject]@{
-    ModName = "@ModOne"
-    Prefix = "HM"
-    PrefixLinkRoot = "HM\ModOne"
-    KeyName = "hub33k"
-  }
 
-  [pscustomobject]@{
-    ModName = "@ModTwo"
-    Prefix = "HM"
-    PrefixLinkRoot = "HM\ModTwo"
-    KeyName = "hub33k"
-  }
-)
+# Do not touch code below
+# ================================================================
 
-# Stuff for filepatching
-$ModPrefixDirectories = [System.Collections.ArrayList]@("ExampleMod")
-$ModPrefixDirectories.Add("HM") > $null
-# $ModPrefixDirectories.Add("JM") > $null
-# $ModPrefixDirectories.Add("DayZExpansion") > $null
+# Load server config
+if (Test-Path -Path "P:\HubModdingTools\HMTServerConfig.ps1" -PathType leaf) {
+  . P:\HubModdingTools\HMTServerConfig
+}
+
+# Load mod config
+if (Test-Path -Path "P:\HubModdingTools\HMTModConfig.ps1" -PathType leaf) {
+  . P:\HubModdingTools\HMTModConfig
+}
