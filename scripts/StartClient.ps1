@@ -2,9 +2,9 @@
 
 . ./StopClient
 
-Write-Host Starting DayZ CLIENT: $ExecutableDayZClient
-Write-Host Args:
-Write-Host $ClientArgs
+"Starting DayZ CLIENT: $ExecutableDayZClient"
+"Args:"
+"$ClientArgs"
 
 start $PathClient\$ExecutableDayZClient $ClientArgs
 
