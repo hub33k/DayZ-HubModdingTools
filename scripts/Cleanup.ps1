@@ -1,0 +1,6 @@
+. ./Config
+
+. ./ClearLogs
+. ./WipeServer
+
+pause
