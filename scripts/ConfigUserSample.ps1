@@ -1,5 +1,5 @@
-$PathHMT = "C:\dev\gamedev\dayz\DayZ-HubModdingTools"
-$PathRealWorkDrive = "C:\dev\gamedev\dayz"
+$PathRealWorkDrive = "C:\DayZ"
+$PathHMT = "$PathRealWorkDrive\DayZ-HubModdingTools"
 $PathRealServer = "$PathRealWorkDrive\Server"
 $PathRealClient = "$PathRealWorkDrive\Client"
 
@@ -11,14 +11,8 @@ $PathWorkDrive = "P:"
 $PathSteamApps     = "C:\Programs\Steam\steamapps"
 $PathMikeroTools   = "C:\Program Files (x86)\Mikero\DePboTools\bin"
 
-$PathServerMission = "$PathServer\mpmissions\dayzOffline.chernarusplus"
-
-$ModBuildDirectory = "P:\ModsDev"
-$KeyDirectory = "C:\dev\gamedev\dayz\modding\keys"
-
-
-# Do not touch code below
-# ================================================================
+$ModBuildDirectory = "$PathWorkDrive\ModsDev"
+$KeyDirectory = "$PathRealWorkDrive\modding\keys"
 
 # Load server config
 if (Test-Path -Path "P:\HubModdingTools\HMTServerConfig.ps1" -PathType leaf) {

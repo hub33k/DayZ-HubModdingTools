@@ -1,6 +1,7 @@
 . ./Config
 
 $modsPath = "$PathDayZClient\!Workshop"
+$modsPath = "$PathDayZClient\!dzsal"
 $modsPath = "$PathWorkDrive\Mods"
 
 Get-ChildItem –Path "$modsPath" |

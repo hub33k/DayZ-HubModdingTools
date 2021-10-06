@@ -1,80 +1,65 @@
 - [Requirements](#requirements)
-- [Structure](#structure)
-  - [P Drive](#p-drive)
+  - [Optional tools](#optional-tools)
 - [Configuration](#configuration)
-- [Server](#server)
-- [Mods](#mods)
+  - [Pre setup](#pre-setup)
+  - [Setup P drive](#setup-p-drive)
+  - [Extract DayZ code](#extract-dayz-code)
+  - [Setup local server](#setup-local-server)
+  - [Setup local mod](#setup-local-mod)
 
 # Requirements
 
 - `DayZ`, `DayZ Server` and `DayZ Tools` (installed on Steam).
 - PowerShell - https://docs.microsoft.com/en-us/powershell/
   - for running scripts
-- Mikero Tools - https://mikero.bytex.digital/Downloads
-  - cupCore2p
-  - dayz2p
-  - DeRap
-  - Eliteness
-  - ExtractPbo
-  - MakePbo
-  - pboProject
-  - Rapify
+- Mikero Tools - run `scripts/DownloadMikeroTools.ps1`
+  - it will download all Mikero Tools you will need to install
+  - if you have problems downloading files go to `https://mikero.bytex.digital/Downloads` and download file manually
+  - `cupCore2p`
+  - `dayz2p`
+  - `DeRap`
+  - `Eliteness`
+  - `ExtractPbo`
+  - `MakePbo`
+  - `Mikero_AiO_Installer_Beta` - for upgrading Mikero Tools
+  - `pboProject`
+  - `Rapify`
 
-# Structure
+## Optional tools
 
-- `C:\dev\gamedev\dayz\`
-  - `Client`
-  - `DayZ-HubModdingTools`
-  - `dayz-src`
-  - `modding`
-    - `keys`
-  - `pdrive`
-  - `Server`
-
-## P Drive
-
-- `P:\` - (DayZ extracted assets and source code)
-  - `bin`
-  - `Core`
-  - `dta`
-  - `DZ`
-  - `ExampleMod -> C:\dev\ExampleMod` - mod that we're working on (source code)
-  - `graphics`
-  - `gui`
-  - `HubModdingTools` - files for HubModdingTools
-  - `languagecore`
-  - `Logs` - my logs
-  - `Mods` - mods from steam workshop (symlinked)
-  - `ModsDev` - our mods that are production ready (packed to pbo's)
-  - `scripts` - actual DayZ source code
-  - `system`
-  - `temp`
-  - `vendor` - assets from workshop mods we want to edit
-  - `MapLegend.png`
+- PBO Manager
 
 # Configuration
 
-1. Setup Work Drive in `DayZ Tools` (`P:`).
-1. Run `dayz2p.bat` (from Mikero Tools; by default located in: `C:\Program Files (x86)\Mikero\DePboTools\bin\`).
-1. Copy `scripts/ConfigUserSample.bat` to `scripts/ConfigUser.bat`.
-1. Adjust values in `scripts/ConfigUser.bat`.
-1. Run `scripts/FixScripts.bat`.
-1. Run `SetupWorkdrive.bat`.
-1. Run `scripts/CopyGameFiles.bat`.
+## Pre setup
 
----
+1. Create root folder for all DayZ related stuff (eg. `C:\DayZ`).
+1. Clone `DayZ-HubModdingTools` repository to `C:\DayZ`.
+  - `git clone https://github.com/hub33k/DayZ-HubModdingTools`
+  - Path should looks like `C:\DayZ\DayZ-HubModdingTools`.
+1. Copy `scripts/ConfigUserSample.ps1` to `scripts/ConfigUser.ps1` and adjust values (for more info check [ConfigUser.md](ConfigUser.md)).
+1. Run `Setup.ps1`.
 
-- configs
-  - `scripts/Config.ps1`
-  - `scripts/ConfigUser.ps1`
-  - `P:\HubModdingTools\HMTServerConfig.ps1`
-  - `P:\HubModdingTools\HMTModConfig.ps1`
+## Setup P drive
 
-# Server
+1. Run `DayZ Tools` (from steam).
+1. Navigate to Settings.
+1. Set a `Drive Letter` and your `Path to the Project Drive`.
+   1. Recommended `Drive Letter` - `P:\`
+   1. Recommended `Path to the Project Drive` - `C:\DayZ\pdrive`
+1. Select `Automatic mount of the Project Drive` to `Startup of the Tools`.
+1. Click apply.
 
-- run `SetupWorkdrive.ps1` from server folder
+## Extract DayZ code
 
-# Mods
+1. Extract DayZ code via Mikero Tools - run `C:\Program Files (x86)\Mikero\DePboTools\bin\dayz2p.cmd`.
+  - For workdrive choose `P`.
+1. Run `scripts/Vendor/DayZ-Utilities/FixScripts.bat`.
 
-- run `SetupWorkdrive.ps1` from server folder
-- before working on your mod, first you need to build your mod at least once
+## Setup local server
+
+TODO (hub33k):
+
+## Setup local mod
+
+TODO (hub33k):

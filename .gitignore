@@ -10,12 +10,12 @@ scripts/Local.ps1
 # ================================================================
 
 mods/*
-!mods/ExampleOne/
-!mods/ExampleTwo/
+!mods/ExampleMod/
 
 scripts/Local/
 
 servers/*
+!servers/ExampleServer/
 
 # Generated
 # ================================================================
