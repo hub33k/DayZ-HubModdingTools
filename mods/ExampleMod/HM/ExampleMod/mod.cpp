@@ -1,0 +1,11 @@
+name = "Example Mod";
+picture = "HM/ExampleMod/gui/images/dayz_editor_icon_black.edds";
+logo = "HM/ExampleMod/gui/images/dayz_editor_icon_black.edds";
+logoSmall = "HM/ExampleMod/gui/images/dayz_editor_icon_black.edds";
+logoOver = "HM/ExampleMod/gui/images/dayz_editor_icon_black.edds";
+tooltip = "HM/ExampleMod";
+overview = "";
+action = "";
+author = "hub33k";
+authorID = "";
+version = "";
