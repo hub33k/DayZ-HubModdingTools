@@ -1,0 +1,65 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Root
+# ================================================================
+
+/*
+!.vscode
+!.editorconfig
+!.gitignore
+!README.md
+!SetupWorkdrive.ps1
+
+# docs
+# ================================================================
+
+!/docs
+
+# Scripts
+# ================================================================
+
+!/Scripts
+
+# Server
+# ================================================================
+
+!/Server
+
+# Client_Profile
+# ================================
+
+/Server/!Client_Profile/*
+!/Server/!Client_Profile/.gitkeep
+
+# Logs
+/Server/!Client_Profile/**/*.log
+/Server/!Client_Profile/**/*.RPT
+/Server/!Client_Profile/**/*.ADM
+/Server/!Client_Profile/**/*.mdmp
+
+# Server_Profile
+# ================================
+
+# Logs
+/Server/!Server_Profile/**/*.log
+/Server/!Server_Profile/**/*.RPT
+/Server/!Server_Profile/**/*.ADM
+/Server/!Server_Profile/**/*.mdmp
+
+# Folders on machine
+/Server/!Server_Profile/BattlEye/*
+/Server/!Server_Profile/DataCache/*
+/Server/!Server_Profile/Users/*
+
+# VPPAdminTools
+
+/Server/!Server_Profile/VPPAdminTools/Logging/*
+
+# mpmissions
+# ================================
+
+# everything in 'dayzOffline.chernarusplus' but excluding:
+/Server/mpmissions/dayzOffline.chernarusplus/storage_*
+
+# everything in 'dayzOffline.enoch' but excluding:
+/Server/mpmissions/dayzOffline.enoch/storage_*
