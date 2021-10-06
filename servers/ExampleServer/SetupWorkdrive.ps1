@@ -14,3 +14,5 @@ if (Test-Path -Path "$destPath" -PathType leaf) {
 
 "Creating link $destPath <-> $srcPath"
 New-Item -Path "$destPath" -ItemType SymbolicLink -Value "$srcPath"
+
+pause
