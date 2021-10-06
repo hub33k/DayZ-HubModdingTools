@@ -12,7 +12,7 @@ REM ///////////////////////
 set "LatestFile="
 set "SecondLatestFile="
 
-for /F "delims=|" %%I in ('dir %ProfileDirectory%\*.log /B /O:D') do (
+for /F "delims=|" %%I in ('dir %ProfileDirectory%\*.log /B /O:D') do ( 
 	set SecondLatestFile=!LatestFile!
 	set LatestFile=%%I
 )
@@ -20,5 +20,3 @@ for /F "delims=|" %%I in ('dir %ProfileDirectory%\*.log /B /O:D') do (
 CD /D %NPP_Directory%
 notepad++ %ProfileDirectory%\%LatestFile%
 notepad++ %ProfileDirectory%\%SecondLatestFile%
-
-pause

@@ -21,5 +21,3 @@ for %%a in (%list%) do (
 )
 
 endlocal
-
-pause

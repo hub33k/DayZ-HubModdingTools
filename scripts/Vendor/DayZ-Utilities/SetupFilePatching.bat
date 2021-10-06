@@ -1,5 +1,5 @@
 @echo off
-setlocal enableextensions enabledelayedexpansion
+setlocal enableextensions enabledelayedexpansion 
 
 cd /D "%~dp0"
 
@@ -82,18 +82,18 @@ echo.[31m ExpClientDirectory:[0m %ExpClientDirectory%
 echo.[31m ExpServerDirectory:[0m %ExpServerDirectory%
 echo.[31m WorkbenchDirectory:[0m %WorkbenchDirectory%
 
-:EchoLoopPrefixes
-if defined ModPrefixDirectories[%Length%] (
+:EchoLoopPrefixes 
+if defined ModPrefixDirectories[%Length%] ( 
 	REM call echo 	%%ModPrefixDirectories[%Length%]%%
 	set /a Length+=1
-	GOTO :EchoLoopPrefixes
+	GOTO :EchoLoopPrefixes 
 )
 set /a InclusiveLength=%Length%-1
 
 echo.[31m Mod Prefix Directories (total %Length%): [0m
 
-for /l %%n in (0,1,%InclusiveLength%-1) do (
-	echo.	!ModPrefixDirectories[%%n]!
+for /l %%n in (0,1,%InclusiveLength%-1) do ( 
+	echo.	!ModPrefixDirectories[%%n]! 
 )
 
 :PROMPT
