@@ -35,8 +35,10 @@
 
 1. Create root folder for all DayZ related stuff (eg. `C:\DayZ`).
 1. Clone `DayZ-HubModdingTools` repository to `C:\DayZ`.
-  - `git clone https://github.com/hub33k/DayZ-HubModdingTools`
-  - Path should looks like `C:\DayZ\DayZ-HubModdingTools`.
+
+   - `git clone https://github.com/hub33k/DayZ-HubModdingTools`
+   - Path should looks like `C:\DayZ\DayZ-HubModdingTools`.
+
 1. Copy `scripts/ConfigUserSample.ps1` to `scripts/ConfigUser.ps1` and adjust values (for more info check [ConfigUser.md](ConfigUser.md)).
 1. Run `Setup.ps1`.
 
@@ -53,7 +55,9 @@
 ## Extract DayZ code
 
 1. Extract DayZ code via Mikero Tools - run `C:\Program Files (x86)\Mikero\DePboTools\bin\dayz2p.cmd`.
-  - For workdrive choose `P`.
+
+   - For workdrive choose `P`.
+
 1. Run `scripts/Vendor/DayZ-Utilities/FixScripts.bat`.
 
 ## Setup local server
