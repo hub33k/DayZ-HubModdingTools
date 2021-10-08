@@ -10,15 +10,19 @@ set mission=dayzOffline.chernarusplus
 
 @rem ================================================================
 
-start "" /d "%server-path%" "%git-exec%" fetch origin master
+start "" /B /D "%server-path%" "%git-exec%" fetch origin main
 timeout /t 10
 
-start "" /d "%server-path%" "%git-exec%" pull
+start "" /B /D "%server-path%" "%git-exec%" pull
 timeout /t 15
 
-start "" /d "%server-path%" "%git-exec%" add .
-start "" /d "%server-path%" "%git-exec%" commit -m "Server Autoupdate!"
-start "" /d "%server-path%" "%git-exec%" push
+start "" /B /D "%server-path%" "%git-exec%" add .
+timeout /T 1
+
+start "" /B /D "%server-path%" "%git-exec%" commit -m "Server Autoupdate!"
+timeout /T 1
+
+start "" /B /D "%server-path%" "%git-exec%" push
 timeout /t 15
 
 @rem ================================================================
