@@ -9,6 +9,7 @@ CreateFolder("$PathRealWorkDrive\modding\keys")
 CreateFolder("$PathRealWorkDrive\pdrive")
 CreateFolder("$PathRealWorkDrive\pdrive\HubModdingTools")
 CreateFolder("$PathRealWorkDrive\pdrive\Mods")
+CreateFolder("$PathRealWorkDrive\pdrive\ModsDev")
 CreateFolder("$ModBuildDirectory")
 "Folders created..."
 
