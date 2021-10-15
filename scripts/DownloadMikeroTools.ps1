@@ -20,11 +20,13 @@ $FILES_TO_DOWNLOAD = [System.Collections.ArrayList]@(
 
   "cupCore2p.1.04.7.32.Installer.exe"
   "dayz2p.1.19.8.07.Installer.exe"
+  "DePbo.8.23.0.26.Installer.exe"
+  "DeOgg.1.04.7.95.Installer.exe"
   "DeRap.1.82.7.71.Installer.exe"
   "Eliteness.4.00.8.11.Installer.exe"
   "ExtractPbo.2.26.7.79.Installer.exe"
   "MakePbo.2.12.7.73.Installer.exe"
-  "Mikero_AiO_Installer_Beta_v1.1.1.10.exe"
+  "Mikero%20AIO%20Install.exe"
   "pboProject.3.16.8.22.Installer.exe"
   "Rapify.1.85.7.71.Installer.exe"
 )

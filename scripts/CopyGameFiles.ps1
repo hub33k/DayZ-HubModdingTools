@@ -48,7 +48,7 @@ xcopy "$PathDayZServer\*.dll"              "$PathServer\" /D /Y /F
 # xcopy "$PathDayZServer\ban.txt"            "$PathServer\" /D /Y /F
 # xcopy "$PathDayZServer\whitelist.txt"      "$PathServer\" /D /Y /F
 # xcopy "$PathDayZServer\dayzsetting.xml"    "$PathServer\" /D /Y /F
-# xcopy "$PathDayZServer\dayz.gproj"         "$PathServer\" /D /Y /F
+xcopy "$PathDayZServer\dayz.gproj"         "$PathServer\" /D /Y /F
 # xcopy "$PathDayZServer\serverDZ.cfg"       "$PathServer\" /D /Y /F
 
 "`n"
