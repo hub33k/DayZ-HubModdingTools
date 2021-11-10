@@ -20,7 +20,7 @@ $FILES_TO_DOWNLOAD = [System.Collections.ArrayList]@(
 
   "cupCore2p.1.04.7.32.Installer.exe"
   "dayz2p.1.19.8.07.Installer.exe"
-  "DePbo.8.23.0.26.Installer.exe"
+  "DePbo.8.35.0.26.Installer.exe"
   "DeOgg.1.04.7.95.Installer.exe"
   "DeRap.1.82.7.71.Installer.exe"
   "Eliteness.4.00.8.11.Installer.exe"
