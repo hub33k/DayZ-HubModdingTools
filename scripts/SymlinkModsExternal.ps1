@@ -1,4 +1,6 @@
-. ./Config
+Set-StrictMode -Version Latest
+
+. $PSScriptRoot/Config
 
 # ================================================================
 # Symlink all mods installed on steam to my local server

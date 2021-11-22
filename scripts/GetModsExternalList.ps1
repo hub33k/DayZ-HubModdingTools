@@ -1,4 +1,6 @@
-. ./Config
+Set-StrictMode -Version Latest
+
+. $PSScriptRoot/Config
 
 $modsPath = "$PathDayZClient\!Workshop"
 $modsPath = "$PathDayZClient\!dzsal"

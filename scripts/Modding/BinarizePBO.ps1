@@ -1,15 +1,16 @@
-. ../Config
+Set-StrictMode -Version Latest
 
-. $PathScriptsRoot/Modding/Modding
+. $PSScriptRoot/../Config
+
+. $PSScriptRoot/Modding
 
 $folderToBuild = $args[0]
 $compression = $args[1]
 
 $failed = 0
 
-if (!$IsModding) {
-  # TODO (hub33k): stop script here
-}
+# TODO (hub33k): stop script here
+# if (!$IsModding) {}
 
 # TODO (hub33k): check how it's made, check orginal src + P:\Mods
 $pboName = "$folderToBuild".Replace("$PathWorkDrive\$prefixLinkRoot\", "")

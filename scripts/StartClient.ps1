@@ -1,11 +1,13 @@
-. ./Config
+Set-StrictMode -Version Latest
 
-. ./StopClient
+. $PSScriptRoot/Config
+
+. $PSScriptRoot/StopClient
 
 "Starting DayZ CLIENT: $ExecutableDayZClient"
 "Args:"
 "$ClientArgs"
 
-start $PathClient\$ExecutableDayZClient $ClientArgs
+Start-Process $PathClient\$ExecutableDayZClient $ClientArgs
 
-# pause
+pause

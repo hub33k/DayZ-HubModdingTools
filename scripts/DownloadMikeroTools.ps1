@@ -1,4 +1,6 @@
-. ./Config
+Set-StrictMode -Version Latest
+
+. $PSScriptRoot/Config
 
 # Downloading from https://mikero.bytex.digital/Downloads
 

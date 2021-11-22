@@ -1,4 +1,6 @@
-. ./Config
+Set-StrictMode -Version Latest
+
+. $PSScriptRoot/Config
 
 # xcopy options - https://www.petefreitag.com/item/99.cfm
 

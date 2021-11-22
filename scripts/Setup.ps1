@@ -1,4 +1,6 @@
-. ./Config
+Set-StrictMode -Version Latest
+
+. $PSScriptRoot/Config
 
 # 1. Setup paths
 
@@ -15,7 +17,6 @@ CreateFolder("$ModBuildDirectory")
 
 ""
 
-. ./CopyGameFiles
-. ./Validate
+# . $PSScriptRoot/CopyGameFiles
 
 pause

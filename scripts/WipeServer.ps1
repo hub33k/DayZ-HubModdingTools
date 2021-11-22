@@ -1,4 +1,6 @@
-. ./Config
+Set-StrictMode -Version Latest
+
+. $PSScriptRoot/Config
 
 $pathToRemove = "$PathMPMission\storage_1"
 
@@ -7,4 +9,4 @@ if (Test-Path -Path $pathToRemove -PathType Container) {
   Remove-Item $pathToRemove -Recurse -Force -Confirm:$false
 }
 
-# pause
+pause

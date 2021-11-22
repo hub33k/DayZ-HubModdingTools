@@ -1,4 +1,8 @@
-. ./Config
+Set-StrictMode -Version Latest
 
-. ./StartServer
-. ./StartClient
+. $PSScriptRoot/Config
+
+. $PSScriptRoot/StartServer
+. $PSScriptRoot/StartClient
+
+pause

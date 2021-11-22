@@ -17,11 +17,13 @@
   - if you have problems downloading files go to `https://mikero.bytex.digital/Downloads` and download file manually
   - `cupCore2p`
   - `dayz2p`
+  - `DePbo`
+  - `DeOgg`
   - `DeRap`
   - `Eliteness`
   - `ExtractPbo`
   - `MakePbo`
-  - `Mikero_AiO_Installer_Beta` - for upgrading Mikero Tools
+  - `Mikero AIO Install.exe` - for upgrading Mikero Tools
   - `pboProject`
   - `Rapify`
 

@@ -1,11 +1,13 @@
-. ./Config
+Set-StrictMode -Version Latest
 
-. ./StopServer
+. $PSScriptRoot/Config
+
+. $PSScriptRoot/StopServer
 
 "Starting DayZ SERVER: $ExecutableDayZServer"
 "Args:"
 "$ServerArgs"
 
-start $PathServer\$ExecutableDayZServer $ServerArgs
+Start-Process $PathServer\$ExecutableDayZServer $ServerArgs
 
-# pause
+pause

@@ -1,3 +1,6 @@
+Set-StrictMode -Version Latest
+
+
 # Some global variables
 # ================================================================
 
@@ -7,8 +10,8 @@ $PathScriptsRoot = "$PathHMTRoot\scripts"
 
 # ================================================================
 
-. $PathScriptsRoot/Helpers
-. $PathScriptsRoot/ConfigUser
+. $PSScriptRoot/Helpers
+. $PSScriptRoot/ConfigUser
 
 # ================================================================
 

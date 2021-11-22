@@ -1,6 +1,8 @@
-. ./Config
+Set-StrictMode -Version Latest
 
-. ./ClearLogs
-. ./WipeServer
+. $PSScriptRoot/Config
+
+. $PSScriptRoot/ClearLogs
+. $PSScriptRoot/WipeServer
 
 pause

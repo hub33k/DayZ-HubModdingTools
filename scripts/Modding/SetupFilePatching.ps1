@@ -1,6 +1,8 @@
+Set-StrictMode -Version Latest
+
 . $PSScriptRoot/../Config
 
-. $PathScriptsRoot/Modding/Modding
+. $PSScriptRoot/Modding
 
 $ModPrefixDirectoriesSize = $ModPrefixDirectories.Count
 
