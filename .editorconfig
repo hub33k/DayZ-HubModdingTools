@@ -32,6 +32,14 @@ indent_size = 4
 [*.md]
 trim_trailing_whitespace = false
 
+[*.{c,cpp,xml,json,cfg,txt}]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+indent_style = unset
+indent_size = unset
+
 [*.{c,cpp,h,hpp}]
 indent_style = tab
 indent_size = 4
