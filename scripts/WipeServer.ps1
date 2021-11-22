@@ -4,9 +4,12 @@ Set-StrictMode -Version Latest
 
 $pathToRemove = "$PathMPMission\storage_1"
 
+"[WipeServer] Removing server storage_1: $pathToRemove"
+
+""
+
 if (Test-Path -Path $pathToRemove -PathType Container) {
-  Write-Host Wiping server: $pathToRemove
-  Remove-Item $pathToRemove -Recurse -Force -Confirm:$false
+  Remove-Item $pathToRemove -Recurse -Force -Confirm:$false -Verbose
 }
 
 pause
