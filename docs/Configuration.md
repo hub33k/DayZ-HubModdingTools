@@ -6,6 +6,7 @@
   - [Extract DayZ code](#extract-dayz-code)
   - [Setup local server](#setup-local-server)
   - [Setup local mod](#setup-local-mod)
+  - [Setup workbench](#setup-workbench)
 
 # Requirements
 
@@ -69,3 +70,7 @@ TODO (hub33k):
 ## Setup local mod
 
 TODO (hub33k):
+
+## Setup workbench
+
+- https://community.bistudio.com/wiki/DayZ:Workbench_Script_Debugging -> Workbench Setup
