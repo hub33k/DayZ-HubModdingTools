@@ -6,10 +6,7 @@ GameProjectClass {
 			platformHardware PC
 			skeletonDefinitions "DZ/Anims/cfg/skeletons.anim.xml"
 			FileSystem {
-				FileSystemPathClass {
-					Name "Game Root"
-					Directory "./"
-				}
+@GAME_DIR
 			}
 			imageSets {
 				"gui/imagesets/ccgui_enforce.imageset"
@@ -27,16 +24,19 @@ GameProjectClass {
 				"gui/imagesets/selection.imageset"
 				"gui/imagesets/console_toolbar.imageset"
 				"Graphics/Textures/postprocess/VignetteFrames.imageset"
+@IMAGE_SET
 			}
 			widgetStyles {
 				"gui/looknfeel/dayzwidgets.styles"
 				"gui/looknfeel/widgets.styles"
+@WIDGET_STYLE
 			}
 			ScriptModules {
 				ScriptModulePathClass {
 					Name "core"
 					Paths {
 						"scripts/1_Core"
+@SCRIPTS_1_CORE
 					}
 					EntryPoint ""
 				}
@@ -44,6 +44,7 @@ GameProjectClass {
 					Name "gameLib"
 					Paths {
 						"scripts/2_GameLib"
+@SCRIPTS_2_GAMELIB
 					}
 					EntryPoint ""
 				}
@@ -51,6 +52,7 @@ GameProjectClass {
 					Name "game"
 					Paths {
 						"scripts/3_Game"
+@SCRIPTS_3_GAME
 					}
 					EntryPoint "CreateGame"
 				}
@@ -58,6 +60,7 @@ GameProjectClass {
 					Name "world"
 					Paths {
 						"scripts/4_World"
+@SCRIPTS_4_WORLD
 					}
 					EntryPoint ""
 				}
@@ -65,6 +68,7 @@ GameProjectClass {
 					Name "mission"
 					Paths {
 						"scripts/5_Mission"
+@SCRIPTS_5_MISSION
 					}
 					EntryPoint "CreateMission"
 				}
@@ -73,6 +77,7 @@ GameProjectClass {
 					Paths {
 						"scripts/editor/Workbench"
 						"scripts/editor/plugins"
+@SCRIPTS_WORKBENCH
 					}
 					EntryPoint ""
 				} 

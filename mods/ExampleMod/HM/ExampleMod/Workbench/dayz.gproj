@@ -6,9 +6,7 @@ GameProjectClass {
 			platformHardware PC
 			skeletonDefinitions "DZ/Anims/cfg/skeletons.anim.xml"
 			FileSystem {
-
 			}
-
 			imageSets {
 				"gui/imagesets/ccgui_enforce.imageset"
 				"gui/imagesets/rover_imageset.imageset"
@@ -24,7 +22,7 @@ GameProjectClass {
 				"gui/imagesets/playstation_buttons.imageset"
 				"gui/imagesets/selection.imageset"
 				"gui/imagesets/console_toolbar.imageset"
-				"DayZEditor/gui/imagesets/dayz_editor_gui.imageset"
+				"Graphics/Textures/postprocess/VignetteFrames.imageset"
 			}
 			widgetStyles {
 				"gui/looknfeel/dayzwidgets.styles"
@@ -35,8 +33,6 @@ GameProjectClass {
 					Name "core"
 					Paths {
 						"scripts/1_Core"
-
-						"HM/ExampleMod/Scripts/1_Core"
 					}
 					EntryPoint ""
 				}
@@ -51,8 +47,6 @@ GameProjectClass {
 					Name "game"
 					Paths {
 						"scripts/3_Game"
-
-						"HM/ExampleMod/Scripts/3_Game"
 					}
 					EntryPoint "CreateGame"
 				}
@@ -74,17 +68,14 @@ GameProjectClass {
 					}
 					EntryPoint "CreateMission"
 				}
-
 				ScriptModulePathClass {
-				Name "workbench"
+					Name "workbench"
 					Paths {
 						"scripts/editor/Workbench"
 						"scripts/editor/plugins"
-
-						"HM/ExampleMod/Scripts/Editor/Plugins"
 					}
 					EntryPoint ""
-				}
+				} 
 			}
 		}
 		GameProjectConfigClass XBOX_ONE {
