@@ -36,63 +36,74 @@ $PlayerName = "hub33k"
 # Mods to load
 # ================================================================
 
-$PathModsExternalRoot = "$PathWorkDrive\Mods\"
-$PathModsDevRoot = "$PathWorkDrive"
+$PathModsExternalRoot = "$PathWorkDrive\Mods"
+$PathModsDevRoot = "$PathWorkDrive\ModsDev"
 
-$MODS_EXTERNAL = [System.Collections.ArrayList]@("$PathModsExternalRoot@CF")
+$MODS_EXTERNAL = [System.Collections.ArrayList]@(
+  # Mod utils
+  # "$PathModsExternalRoot\@CF"
+  # "$PathModsExternalRoot\@Dabs Framework"
+
+  # Admin Tools
+  # "$PathModsExternalRoot\@VPPAdminTools"
+  # "$PathModsExternalRoot\@ZomBerry Admin Tools"
+
+  # Complex mods
+
+  # Quality of life
+  # "$PathModsExternalRoot\@SimpleAutorun"
+  # "$PathModsExternalRoot\@Ear-Plugs"
+
+  # Mechanics
+  # "$PathModsExternalRoot\@GoreZ"
+
+  # Base building
+  # "$PathModsExternalRoot\@Code Lock"
+  # "$PathModsExternalRoot\@BaseBuildingPlus"
+  # "$PathModsExternalRoot\@BuildEverywhere"
+  # "$PathModsExternalRoot\@BuilderItems"
+
+  # Items
+  # "$PathModsExternalRoot\@Notes"
+
+  # "$PathModsExternalRoot\@MuchStuffPack"
+  # "$PathModsExternalRoot\@Mass'sManyItemOverhaul"
+  # "$PathModsExternalRoot\@MunghardsItempack"
+
+  # "$PathModsExternalRoot\@SQUAD MSF-C"
+  # "$PathModsExternalRoot\@MoreGuns"
+
+  # Cars
+  # "$PathModsExternalRoot\@IRP-Land-Rover-Defender-110"
+)
+
+$MODS_DEV = [System.Collections.ArrayList]@(
+  "$ModBuildDirectory\@ExampleMod"
+  # "$ModBuildDirectory\@OtherMod"
+)
+# $MODS_DEV.Add("$ModBuildDirectory\@OtherMod") | Out-Null
 
 if ($ServerType -eq [ServerTypes]::Production) {
   # Production mods
 } elseif ($ServerType -eq [ServerTypes]::Testing) {
   # Testing mods
 } elseif ($ServerType -eq [ServerTypes]::Local) {
-
-  # Mod utils
-  $MODS_EXTERNAL.Add("@Dabs Framework") > $null
-
-  # Admin Tools
-  # $MODS_EXTERNAL.Add("@VPPAdminTools") > $null
-  # $MODS_EXTERNAL.Add("@ZomBerry Admin Tools") > $null
-
-  # Complex mods
-
-  # Quality of life
-  $MODS_EXTERNAL.Add("@SimpleAutorun") > $null
-  $MODS_EXTERNAL.Add("@Ear-Plugs") > $null
-
-  # Mechanics
-  # $MODS_EXTERNAL.Add("@GoreZ") > $null
-
-  # Base building
-  # $MODS_EXTERNAL.Add("@Code Lock") > $null
-  # $MODS_EXTERNAL.Add("@BaseBuildingPlus") > $null
-  # $MODS_EXTERNAL.Add("@BuildEverywhere") > $null
-  # $MODS_EXTERNAL.Add("@BuilderItems") > $null
-
-  # Items
-  # $MODS_EXTERNAL.Add("@Notes") > $null
-
-  # $MODS_EXTERNAL.Add("@MuchStuffPack") > $null
-  # $MODS_EXTERNAL.Add("@Mass'sManyItemOverhaul") > $null
-  # $MODS_EXTERNAL.Add("@MunghardsItempack") > $null
-
-  # $MODS_EXTERNAL.Add("@SQUAD MSF-C") > $null
-  # $MODS_EXTERNAL.Add("@MoreGuns") > $null
-
-  # Cars
-  # $MODS_EXTERNAL.Add("@IRP-Land-Rover-Defender-110") > $null
-
-  # ================================
-
-  $MODS_DEV = [System.Collections.ArrayList]@("$ModBuildDirectory\@ExampleMod")
-  # $MODS_DEV.Add("$ModBuildDirectory\@OtherMod") > $null
+  # $MODS_EXTERNAL.Add("$PathModsExternalRoot\@Dabs Framework") | Out-Null
 }
 
-$MODS_EXTERNAL = $MODS_EXTERNAL -join ";$PathModsExternalRoot"
+$MODS_EXTERNAL = $MODS_EXTERNAL -join ";"
 $MODS_DEV = $MODS_DEV -join ";"
-# $MODS_DEV = $MODS_DEV -join ";$PathModsDevRoot\" # add prefix to MODS_DEV
 
-$MODS = "$MODS_EXTERNAL;$MODS_DEV"
+$MODS = ""
+
+if ($MODS_EXTERNAL.Length) {
+  $MODS = "$MODS_EXTERNAL"
+}
+if ($MODS_EXTERNAL.Length -and $MODS_DEV.Length) {
+  $MODS = "$MODS;$MODS_DEV"
+} elseif ($MODS_DEV.Length) {
+  $MODS = "$MODS_DEV"
+}
 
 
 # ================================================================
