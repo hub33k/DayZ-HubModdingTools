@@ -1,3 +1,6 @@
+# Get real server path
+$ModRootPath = Split-Path -Path (Split-Path -Path (Get-Item $MyInvocation.MyCommand.Path).Target -Parent) -Parent
+
 $prefix = "HM"
 $keyName = "hub33k"
 
