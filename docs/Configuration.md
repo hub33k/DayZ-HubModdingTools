@@ -29,7 +29,7 @@
 
 ## Optional tools
 
-- PBO Manager
+- [PBO Manager](https://pbo-manager-v-1-4.software.informer.com/1.4b/)
 
 # Configuration
 
