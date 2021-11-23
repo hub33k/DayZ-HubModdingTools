@@ -27,3 +27,8 @@ $PathDayZWorkbench = "$PathDayZTools\Workbench"
 $ExecutableWorkbench = "workbenchApp.exe"
 $ExecutableDayZServer = "DayZDiag_x64-Server.exe"
 $ExecutableDayZClient = "DayZDiag_x64-Client.exe"
+
+# ================================================================
+
+$pboProject = "$PathMikeroTools\pboProject.exe"
+$signFile = "$PathDayZTools\DsUtils\DSSignFile.exe"

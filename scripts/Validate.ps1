@@ -1,7 +1,6 @@
 Set-StrictMode -Version Latest
 
 . $PSScriptRoot/Config
-. $PSScriptRoot/Modding/Modding
 
 "Your PowerShell version: $($PSVersionTable.PSVersion)"
 ""

@@ -1,4 +1,4 @@
-$PathRealWorkDrive = "C:\DayZ"
+$PathRealWorkDrive = "C:\dev\gamedev\dayz"
 $PathHMT = "$PathRealWorkDrive\DayZ-HubModdingTools"
 $PathRealServer = "$PathRealWorkDrive\Server"
 $PathRealClient = "$PathRealWorkDrive\Client"
@@ -8,7 +8,7 @@ $PathClient = "$PathRealClient"
 
 $PathWorkDrive = "P:"
 
-$PathSteamApps     = "C:\Programs\Steam\steamapps"
+$PathSteamApps     = "C:\Program Files (x86)\Steam\steamapps"
 $PathMikeroTools   = "C:\Program Files (x86)\Mikero\DePboTools\bin"
 
 $ModBuildDirectory = "$PathWorkDrive\ModsDev"
