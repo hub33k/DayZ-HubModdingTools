@@ -17,6 +17,6 @@ CreateFolder("$ModBuildDirectory")
 
 ""
 
-# . $PSScriptRoot/CopyGameFiles
+. $PSScriptRoot/CopyGameFiles
 
 pause
