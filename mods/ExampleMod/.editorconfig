@@ -16,39 +16,19 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[Makefile]
-indent_style = tab
-
-[CMakeLists.*]
-indent_size = 4
-
-[*.cmake]
-indent_size = 4
-
-# Python
-[*.py]
-indent_size = 4
-
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{c,h,hpp}]
-indent_style = tab
-indent_size = 4
+# DayZ sepecifc
 
-# Custom
-
-[*.{c,xml,json,cfg,txt}]
-# end_of_line = crlf
-trim_trailing_whitespace = false
-insert_final_newline = false
-
-[*.{c,layout,gproj}]
-end_of_line = crlf
-indent_style = tab
-trim_trailing_whitespace = false
-insert_final_newline = false
+[*.{gproj,layout,c,cpp,xml,json,cfg,txt}]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+indent_style = unset
+indent_size = unset
 
 [*.c]
-trim_trailing_whitespace = true
-insert_final_newline = true
+indent_style = tab
+indent_size = 4

@@ -6,6 +6,7 @@
 /*
 !.vscode
 !.editorconfig
+!.gitattributes
 !.gitignore
 !README.md
 !SetupWorkdrive.ps1

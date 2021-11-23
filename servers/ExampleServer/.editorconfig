@@ -19,12 +19,16 @@ insert_final_newline = true
 [*.md]
 trim_trailing_whitespace = false
 
-# Custom
+# DayZ sepecifc
 
-[*.{c,cpp,xml,json,cfg,txt}]
+[*.{gproj,layout,c,cpp,xml,json,cfg,txt}]
 charset = unset
 end_of_line = unset
 insert_final_newline = unset
 trim_trailing_whitespace = unset
 indent_style = unset
 indent_size = unset
+
+[*.c]
+indent_style = tab
+indent_size = 4
