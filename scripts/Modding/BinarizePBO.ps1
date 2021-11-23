@@ -2,8 +2,6 @@ Set-StrictMode -Version Latest
 
 . $PSScriptRoot/../Config
 
-. $PSScriptRoot/Modding
-
 $folderToBuild = $args[0]
 $compression = $args[1]
 

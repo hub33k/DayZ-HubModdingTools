@@ -2,8 +2,6 @@ Set-StrictMode -Version Latest
 
 . $PSScriptRoot/../Config
 
-. $PSScriptRoot/Modding
-
 # TODO (hub33k): is it needed?
 $compression = 0 # promptYN "Compression" "Enable Compression?"
 
