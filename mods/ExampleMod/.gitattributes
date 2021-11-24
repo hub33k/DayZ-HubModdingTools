@@ -3,13 +3,12 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-*.c eol=crlf
-
-*.cpp eol=unset
-*.gproj eol=unset
-*.layout eol=unset
-
-*.xml eol=unset
-*.json eol=unset
-*.cfg eol=unset
-*.txt eol=unset
+# Handle DayZ files
+*.c      eol=crlf
+*.cpp    -text -diff
+*.gproj  -text -diff
+*.layout -text -diff
+*.xml    -text -diff
+*.json   -text -diff
+*.cfg    -text -diff
+*.txt    -text -diff
