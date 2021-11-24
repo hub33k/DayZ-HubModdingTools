@@ -1,3 +1,5 @@
+# ExampleMod
+
 # Get real mod path
 $ModRootPath = Split-Path -Path (Split-Path -Path (Get-Item $MyInvocation.MyCommand.Path).Target -Parent) -Parent
 
