@@ -8,7 +8,7 @@ if (Test-Path -Path "$prefixPath\$modName" -PathType Container) {
 }
 
 "Creating link $prefixPath\$modName"
-New-Item -Path "$prefixPath\$modName" -ItemType Junction -Value "$pwd\HM"
+New-Item -Path "$prefixPath\$modName" -ItemType Junction -Value "$pwd\$prefix"
 
 # ================================================================
 
