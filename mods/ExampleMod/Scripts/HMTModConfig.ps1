@@ -1,4 +1,4 @@
-# Get real server path
+# Get real mod path
 $ModRootPath = Split-Path -Path (Split-Path -Path (Get-Item $MyInvocation.MyCommand.Path).Target -Parent) -Parent
 
 $prefix = "HM"
