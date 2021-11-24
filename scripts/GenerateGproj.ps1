@@ -56,6 +56,7 @@ $scriptsPaths["SCRIPTS_WORKBENCH"] = [System.Collections.Arraylist] @()
 # Handle paths
 
 Get-ChildItem -Path "$CurrentModPath\*" -Recurse -Depth 1 | ForEach-Object {
+  # Handle 1_Core, etc. folders
   foreach ($folder in $foldersToAdd) {
     if ($_.Name -eq $folder) {
       $test = "$ModPrefixLinkRoot\" + $_.FullName.Replace("$CurrentModPath\", "")
@@ -65,6 +66,10 @@ Get-ChildItem -Path "$CurrentModPath\*" -Recurse -Depth 1 | ForEach-Object {
   }
 }
 
+# Handle workbench plugins folder
+if (Test-Path -Path "$CurrentModPath\Scripts\Editor\Plugins\$ModName") {
+  $scriptsPaths["SCRIPTS_WORKBENCH"].Add("`"$ModPrefixLinkRoot\Scripts\Editor\Plugins`"".Replace("\", "/")) | Out-Null
+}
 
 # ================================================================
 # Add entries to gproj file

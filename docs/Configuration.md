@@ -73,4 +73,4 @@ TODO (hub33k):
 
 ## Setup workbench
 
-- https://community.bistudio.com/wiki/DayZ:Workbench_Script_Debugging -> Workbench Setup
+- [How to setup workbench](https://community.bistudio.com/wiki/DayZ:Workbench_Script_Debugging#Workbench_Setup)

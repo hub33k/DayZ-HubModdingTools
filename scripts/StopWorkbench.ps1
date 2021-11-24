@@ -9,12 +9,6 @@ if (Test-Path -Path "$PSScriptRoot\$((Get-Item $PSCommandPath ).BaseName)Custom.
 
 . $PSScriptRoot/Config
 
-. $PSScriptRoot/StopServer
-
-"Starting DayZ SERVER: $ExecutableDayZServer"
-"Args:"
-"$ServerArgs"
-
-Start-Process $PathServer\$ExecutableDayZServer $ServerArgs
+StopProcess "$PathDayZWorkbench\$ExecutableWorkbench"
 
 # pause

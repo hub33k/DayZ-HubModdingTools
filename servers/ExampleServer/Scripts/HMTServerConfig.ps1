@@ -12,9 +12,9 @@ enum ServerTypes {
 [ServerTypes] $ServerType = [ServerTypes]::Local
 
 # Get real server path
-$ProjectRootPath = Split-Path -Path (Split-Path -Path (Get-Item $MyInvocation.MyCommand.Path).Target -Parent) -Parent
+$ServerRootPath = Split-Path -Path (Split-Path -Path (Get-Item $MyInvocation.MyCommand.Path).Target -Parent) -Parent
 
-$BaseDir = "$ProjectRootPath\Server"
+$BaseDir = "$ServerRootPath\Server"
 
 $ServerPort = 2302
 $ServerPassword = "HMT_OK!"

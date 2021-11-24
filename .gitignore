@@ -5,6 +5,7 @@
 
 scripts/ConfigUser.ps1
 scripts/Local.ps1
+scripts/*Custom.ps1
 
 # Folders
 # ================================================================

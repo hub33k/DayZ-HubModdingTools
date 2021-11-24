@@ -73,9 +73,11 @@ GameProjectClass {
 					Paths {
 						"scripts/editor/Workbench"
 						"scripts/editor/plugins"
+						"HubModdingTools/scripts/editor/Workbench"
+						"HubModdingTools/scripts/editor/plugins"
 					}
 					EntryPoint ""
-				} 
+				}
 			}
 		}
 		GameProjectConfigClass XBOX_ONE {
