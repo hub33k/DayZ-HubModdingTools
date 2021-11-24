@@ -10,6 +10,7 @@ if (Test-Path -Path "$PSScriptRoot\$((Get-Item $PSCommandPath ).BaseName)Custom.
 . $PSScriptRoot/Config
 
 . $PSScriptRoot/StartServer
+""
 . $PSScriptRoot/StartClient
 
 pause

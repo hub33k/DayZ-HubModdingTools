@@ -15,6 +15,7 @@ $currentLocation = Get-Location
 $ModWorkbenchPath = "$ModRootPath\$($MODS_TO_BUILD[0].PrefixLinkRoot)\Workbench"
 
 if (Test-Path -Path "$ModWorkbenchPath\dayz.gproj") {
+  "Starting DayZ Workbench: $ExecutableWorkbench"
   Set-Location -Path "$ModWorkbenchPath"
   .\dayz.gproj
 } else {

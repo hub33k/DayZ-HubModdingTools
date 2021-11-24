@@ -15,11 +15,16 @@ if (Test-Path -Path "$PSScriptRoot\$((Get-Item $PSCommandPath ).BaseName)Custom.
 # $ErrorActionPreference = "Stop"
 
 . $PSScriptRoot/StopClient
+""
 . $PSScriptRoot/StopServer
 
 Start-Sleep -Seconds 1
 
+""
+""
+
 . $PSScriptRoot/ClearLogs
+""
 . $PSScriptRoot/WipeServer
 
 pause

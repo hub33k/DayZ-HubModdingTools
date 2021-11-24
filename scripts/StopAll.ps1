@@ -15,6 +15,7 @@ if (Test-Path -Path "$PSScriptRoot\$((Get-Item $PSCommandPath ).BaseName)Custom.
 # $ErrorActionPreference = "Stop"
 
 . $PSScriptRoot/StopClient
+""
 . $PSScriptRoot/StopServer
 
 pause

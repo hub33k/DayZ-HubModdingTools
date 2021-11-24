@@ -9,6 +9,7 @@ if (Test-Path -Path "$PSScriptRoot\$((Get-Item $PSCommandPath ).BaseName)Custom.
 
 . $PSScriptRoot/Config
 
+"Stopping Client $ExecutableDayZClient"
 StopProcess "$PathClient\$ExecutableDayZClient"
 
 # pause
