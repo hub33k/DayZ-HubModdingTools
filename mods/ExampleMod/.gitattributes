@@ -1,14 +1,14 @@
 # https://git-scm.com/docs/gitattributes
 
 # Auto detect text files and perform LF normalization
-* text=auto
+# * text=auto
 
 # Handle DayZ files
-*.c      eol=crlf
-*.cpp    -text -diff
-*.gproj  -text -diff
-*.layout -text -diff
-*.xml    -text -diff
-*.json   -text -diff
-*.cfg    -text -diff
-*.txt    -text -diff
+# *.c      eol=crlf
+# *.cpp    -text -diff
+# *.gproj  -text -diff
+# *.layout -text -diff
+# *.xml    -text -diff
+# *.json   -text -diff
+# *.cfg    -text -diff
+# *.txt    -text -diff
