@@ -83,7 +83,9 @@ $GprojTemplateFile | ForEach-Object {
     $array = $scriptsPaths[$($_.Replace("@", ""))]
     if ($array) {
       # indent first element
-      $array[0] = "`n`t`t`t`t`t`t$($array[0])`n"
+      $array[0] = "`n`t`t`t`t`t`t$($array[0])"
+      # add new line to the last element
+      $array[-1] = "$($array[-1])`n"
       $array -join  "`n`t`t`t`t`t`t"
     }
   }
