@@ -12,6 +12,7 @@ GameProjectClass {
 		 } 
 	 }
 	imageSets {
+      "gui/imagesets/BleedingDrops.imageset"
 	  "gui/imagesets/ccgui_enforce.imageset"
 	  "gui/imagesets/rover_imageset.imageset"
 	  "gui/imagesets/dayz_gui.imageset"
