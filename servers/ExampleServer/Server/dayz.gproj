@@ -18,20 +18,14 @@ GameProjectClass {
 	  "gui/imagesets/dayz_gui.imageset"
 	  "gui/imagesets/dayz_crosshairs.imageset"
 	  "gui/imagesets/dayz_inventory.imageset"
-	  "gui/imagesets/inventory_icons.imageset"
-	  "gui/imagesets/main_menu_newsfeed.imageset"
-	  "gui/imagesets/smart_panel.imageset"
-	  "gui/imagesets/GUI_back_alpha.imageset"
-	  "gui/imagesets/GUI_back_alpha_icon.imageset"
 	  "gui/imagesets/xbox_buttons.imageset"
 	  "gui/imagesets/playstation_buttons.imageset"
-	  "gui/imagesets/selection.imageset"
 	  "gui/imagesets/console_toolbar.imageset"
+	  "gui/imagesets/Map2D_UI.imageset"
 	  "Graphics/Textures/postprocess/VignetteFrames.imageset"
 	 }
 	 widgetStyles {
-	  "gui/looknfeel/dayzwidgets.styles" 
-	  "gui/looknfeel/widgets.styles"
+	  "gui/looknfeel/dayzwidgets.styles"
 	 }
 	 ScriptModules {
 		ScriptModulePathClass {
